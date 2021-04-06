@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+     box-sizing: border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    
+}
+p{
+    
+    line-height: 2;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header.sticky{
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header.sticky .logo{
+ color:#111;
+}
+
+header.sticky ul li a{
+  color: #111;
+}
+header.sticky ul li:first-child {
+background-color:#111;
+flex-grow: 2;
+font-size: larger;
+border-radius: 5px;
+
+}
+
+header.sticky ul li:first-child a{
+    color: white;
+}
+
+header .logo{
+  color: #111;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header ul {
+display: flex;
+position: relative;
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+
+}
+
+header ul li a{
+  position: relative;
+  display: inline-block;
+  margin:0 15px;
+  color:#111;
+  text-decoration: none;
+  
+}
+
+header ul li a:hover{
+  font-size: large;
+}
+
+
+#interest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    /* background: url("https://images.unsplash.com/photo-1497124401559-3e75ec2ed794?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");   */
+    background: url("./IMAGES/forest.JPG");
+    /* background-color: skyblue; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3em;
+    font-weight:500;
+  line-height: 1.5em;
+}
+
+.btn{
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  margin-top: 20px;
+  padding:10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.heading{
+  width:100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.heading h2{
+  font-weight: 600;
+  font-size: 30px;
+} 
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.contentBx{
+  padding: 30px;
+}
+.contentBx h3{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.w50{
+  min-width: 50%;
+}
+
+.img{
+  width:100%;
+}
+.contentBx ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; 
+} 
+table{
+    text-align: center;
+}
+
+table td, table th{
+    width:138px
+}
+table td:nth-child(odd), .grey{
+    background-color: #ccc;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section {
+  padding: 100px;
+}
+
+#reading{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+}
+
+.book ol{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("./IMAGES/forest.JPG");
+
+  /* Set a specific height */
+  min-height: 350px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.poem p{
+    margin: 10px 0;
+}
+
+.DM{
+    color: red;
+}
+.DS{
+    color: royalblue;
+}
+
+.IC{
+    color: salmon;
+}
+
+.CA{
+    color: seagreen;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
