@@ -20,6 +20,19 @@ Here are some styles of the web site
 
     Nav bar is sticky
     font-family: sans- serif
+    all items have letter spacing 1px
+    Hero image 
+    photo offset with flex
+    parallex effect
+    footer sticky
+    document is center using a container
+    hyperlink are underline when hover over
+    poem is indented
+    table has same length of columns
+    each class is color coded
+    browser has an icon
+    potrait can be modal
+    online templates are used and mentioned above
     
 
 
